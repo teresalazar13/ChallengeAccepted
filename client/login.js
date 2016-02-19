@@ -9,9 +9,6 @@ Template.login.events({
                   if (err.reason === "Match failed") {
                       console.log('Todo:fix this error');
                   }
-                  else {
-                      sAlert.error('Username or password incorrect', {effect: 'slide', position: 'bottom-right', timeout: 'none', onRouteClose: false, stack: false, offset: '80px'});
-                  }
                   console.log(err);
               }
           });

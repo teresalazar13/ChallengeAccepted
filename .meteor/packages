@@ -22,3 +22,6 @@ iron:router
 twbs:bootstrap
 fourseven:scss
 accounts-password
+cfs:standard-packages
+cfs:filesystem
+cfs:gridfs
