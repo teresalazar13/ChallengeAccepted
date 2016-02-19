@@ -1,5 +1,27 @@
 <template name="main">
+
+  <form class="main form">
+    <div class="form-group">
+        <label class="control-label title-Pages" for="title">Submit Challenge</label>
+        <div class="controls">
+            <input name="title" id="title" type="text" value="" placeholder="What's the challenge bromigom8?" class="form-control"/>
+            {{> starsRating rating=0 id="rating" size='sm' mutable=true}}
+        </div>
+    </div>
+    <input type="submit" value="Submit" class="buttons-style btn btn-primary"/>
+  </form>
+
   <span class="btn btn-default btn-file">
     <input multiple class="myFileInput" type="file"/>
   </span>
+
+  {{#each challenges_of_user}}
+    <p>{{this.title}}</p>
+  {{/each}}
+
+  {{#each images_of_user}}
+    <img src="{{this.url}}">
+  {{/each}}
+
+
 </template>
