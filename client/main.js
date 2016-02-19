@@ -21,8 +21,7 @@ Template.main.events({
 
   'submit form': function(e) {
     var title = $(e.target).find('[name=title]').val();
-    Meteor.call("add_challenge", title);
-    return false;
+    var rating = $('#rating').data('userrating');
+    Meteor.call("add_challenge", title,rating);
   },
-
 });
