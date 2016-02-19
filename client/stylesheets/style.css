@@ -8,6 +8,13 @@
   position: absolute;
 }
 
+#brand {
+  height: 40px;
+  margin-top: 13%;
+  float:left;
+  margin-left: -10%;
+}
+
 .login {
   float: left;
   margin-left: 2%;
