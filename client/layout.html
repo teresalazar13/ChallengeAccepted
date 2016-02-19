@@ -1,0 +1,8 @@
+<template name = "layout">
+  {{#if currentUser}}
+    {{> header}}
+    {{> main}}
+  {{else}}
+    {{> login}}
+  {{/if}}
+</template>

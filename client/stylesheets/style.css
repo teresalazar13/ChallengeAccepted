@@ -1,0 +1,41 @@
+/* CSS declarations go here */
+.login {
+  float: left;
+  margin-left: 2%;
+  margin-top: 30%;
+}
+
+.login ul li {
+  list-style: none;
+}
+
+.buttons {
+  width: 300px;
+}
+
+.login-buttons {
+  float: left;
+  max-width: 60px;
+  max-height: 20px;
+    padding-left: 50px;
+}
+
+#facebook-logo {
+  max-width: 40px;
+  max-height: 40px;
+
+}
+
+.inputs {
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  border-bottom: 2px solid grey;
+  font-family: monospace;
+  outline: none;
+  margin-top: 5%;
+}
+
+#password {
+  -webkit-text-security: disc;
+}
