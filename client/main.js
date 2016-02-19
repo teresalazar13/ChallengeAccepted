@@ -1,4 +1,5 @@
 Meteor.subscribe("challenges");
+
 Template.main.helpers({
   images_of_user: function() {
     return Images.find({"owner": Meteor.userId()});
