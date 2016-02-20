@@ -14,9 +14,10 @@ Template.main.events({
   'change .myFileInput': function(event, template) {
     var fsFile = new FS.File(event.target.files[0]);
     fsFile.owner = Meteor.userId();
+    var acomp = this.title;
+    fsFile.filename = acomp;
     Images.insert(fsFile, function (err) {
       if (err) throw err;
-      //Meteor.call("add_image", fsFile._id);
     });
   },
 
