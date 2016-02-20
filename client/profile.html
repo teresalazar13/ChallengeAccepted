@@ -1,7 +1,9 @@
 <template name="profile">
   <h1>{{username}}'s Profile</h1>
-  {{#each accomps}}
-    {{this.filename}}
-    <img src="{{this.url}}">
-  {{/each}}
+  <div class="accomps">
+    {{#each accomps}}
+      {{this.filename}}
+      <img class="accomp-image" src="{{this.url}}">
+    {{/each}}
+  </div>
 </template>

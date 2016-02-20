@@ -28,12 +28,19 @@
   margin-top: 8%;
 }
 
+.nav-item hover {
+  background-color: black;
+}
+
 .nav-item {
   margin-left: 10%;
 }
 
 #password {
   -webkit-text-security: disc;
+}
+.inputs hover {
+  font-weight: bold;
 }
 
 .inputs {
@@ -57,23 +64,42 @@
   -webkit-text-security: disc;
 }
 
-
-.control-label.title-Pages{
-  position:relative;
-  left:2.5%;
-  font-size:90px;
-  font-family: Courier;
-}
-
 .buttons-style.btn.btn-primary{
-  position:relative;
-  left:40%;
-  width:200px;
-  height:75px;
-  font-size:35px;
+  background-color: black;
 }
 
 .btn.btn-default.btn-file{
   position: relative;
   left:2.5%;
+}
+
+.submit {
+  margin: auto;
+  width: 40%;
+  padding: 30px;
+  background-color: #e8e5f0;
+}
+
+.posts {
+  margin: auto;
+  margin-top: 4%;
+  width: 40%;
+  padding: 30px;
+  background-color: #e8e5f0;
+}
+
+.page-header {
+  text-align: center;
+}
+
+.accomps {
+  margin: auto;
+  margin-top: 4%;
+  width: 40%;
+  padding: 30px;
+  background-color: #e8e5f0;
+}
+
+.accomp-image {
+  max-height: 500px;
 }
