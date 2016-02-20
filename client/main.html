@@ -11,12 +11,12 @@
     <button class="buttons-style btn btn-primary">Submit</button>
   </form>
 
-  <span class="btn btn-default btn-file">
-    <input multiple class="myFileInput" type="file"/>
-  </span>
-
   {{#each challenges_of_user}}
     <p>{{this.title}}</p>
+    <p>Rate : {{this.rate}}</p>
+    <span class="btn btn-default btn-file">
+      <input multiple class="myFileInput" type="file"/>
+    </span>
   {{/each}}
 
   {{#each images_of_user}}
