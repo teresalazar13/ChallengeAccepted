@@ -4,13 +4,10 @@ Deps.autorun(function(){
 
 Template.leaderboard.helpers({
   users: function() {
-    a = Meteor.users.find({}, {sort: {points: -1}});
-    for (var i=0; i < a.length; i++ ) {
-      var us = a[i];
-      var place = i + 1;
-      console.log(place);
-      Meteor.call("add_rank",us,place);
-    }
-    return a;
-  }
+    var items = Meteor.users.find({}, {sort: {points: -1}}).map(function(doc, index, cursor) {
+    var i = _.extend(doc, {index: 1 + index});
+    return i;
+  });
+  return items;
+  },
 });

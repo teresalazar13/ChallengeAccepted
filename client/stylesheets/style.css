@@ -14,7 +14,7 @@ body {
   width: auto;
   height: 100%;
   box-sizing: border-box;
-  background: url(mano.gif) no-repeat center center fixed;
+  background: url(mano.gif) no-repeat center center;
   position: absolute;
 }
 
@@ -22,13 +22,15 @@ body {
   background-color: white;
   opacity: 0.7;
   margin: auto;
-  margin-top: 10%;
-  margin-left: 10%;
-  width: 100%;
+  margin-top: 13%;
+  margin-left: 13%;
+  position: absolute;
+  width: 50%;
   height: auto;
   border-style: solid;
   padding-bottom: 3%;
 }
+
 
 #brand {
   height: 200%;
@@ -102,14 +104,10 @@ body {
 }
 
 .posts_of_user {
-  float: left;
-  margin: auto;
-  margin-left: 5%;
-  margin-top: 4%;
-  width: 20%;
   background-color: #e8e5f0;
-  display:inline-block;
-
+  margin-top: 5%;
+  margin-left: 5%;
+  padding: 6%;
 }
 
 .page-header {
@@ -117,16 +115,13 @@ body {
 }
 
 .accomps {
-  margin: auto;
-  margin-top: 4%;
-  margin-left: 5%;
-  width: 40%;
-  padding: 30px;
+  margin-right: 5%;
+  margin-top: 5%;
+  padding: 6%;
   background-color: #e8e5f0;
-  display:inline-block;
 }
 .each_accomp {
-  margin-top: 4%;
+  margin-top: 5%;
 }
 
 .accomp-image {

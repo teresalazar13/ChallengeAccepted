@@ -15,15 +15,16 @@
       </thead>
       <tbody>
         {{#each users}}
+
           <tr>
             <td>{{this.username}}</td>
             <td>{{this.points}}</td>
-            <td></td>
+            <td>{{ this.index }}</td>
           </tr>
+
         {{/each}}
       </tbody>
     </table>
   </div>
-  {{users}}
 
 </template>

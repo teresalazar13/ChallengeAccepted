@@ -1,49 +1,47 @@
 <template name="login">
   <div id="background">
   <div class="container">
-        <div id="form-front-page">
-            <form id="authentication-form">
-                <div class="tab-content">
-                    <div role="tabpanel" class="tab-pane active" id="sign-up-tab">
-                        <p><input class="inputs" placeholder="Username" type="text"
-                                  id="username-input"></p>
+        <form id="authentication-form">
+            <div class="tab-content">
+                <div role="tabpanel" class="tab-pane active" id="sign-up-tab">
+                    <p><input class="inputs" placeholder="Username" type="text"
+                              id="username-input"></p>
 
-                        <p><input class="inputs" placeholder="Password" type="password"
-                                  id="password-input"></p>
+                    <p><input class="inputs" placeholder="Password" type="password"
+                              id="password-input"></p>
 
-                        <p><input class="inputs" placeholder="Confirm Password" type="password"
-                                  id="password-confirm-input"></p>
-                    </div>
-
-                    <div role="tabpanel" class="tab-pane" id="sign-in-tab">
-                        <p class="inputs"><input class="inputs" placeholder="Username" type="text" id="username-input"></p>
-
-                        <p class="inputs"><input class="inputs" placeholder="Password" type="password" id="password-input"></p>
-                    </div>
-
-
-                <div id="authentication-form-btns">
-                  <ul  class="nav nav-pills" role="tablist">
-                      <li class="nav-item">
-                          <a id="sign-up-btn" role="tab" data-toggle="tab" class="buttons-style nav-link active"
-                             href="#sign-up-tab">Sign
-                              Up</a>
-                      </li>
-
-                      <li class="nav-item">
-                          <a id="sign-in-btn" role="tab" data-toggle="tab" class="buttons-style nav-link" href="#sign-in-tab">Sign
-                              In</a>
-                      </li>
-
-                      <li class="nav-item">
-                          <a id="facebook-login" role="tab" data-toggle="tab" class="buttons-style nav-link"> Login with Facebook</a>
-                      </li>
-                  </ul>
+                    <p><input class="inputs" placeholder="Confirm Password" type="password"
+                              id="password-confirm-input"></p>
                 </div>
 
+                <div role="tabpanel" class="tab-pane" id="sign-in-tab">
+                    <p><input class="inputs" placeholder="Username" type="text" id="username-input"></p>
+
+                    <p><input class="inputs" placeholder="Password" type="password" id="password-input"></p>
                 </div>
-            </form>
-        </div>
+
+
+            <div id="authentication-form-btns">
+              <ul  class="nav nav-pills" role="tablist">
+                  <li class="nav-item">
+                      <a id="sign-up-btn" role="tab" data-toggle="tab" class="buttons-style nav-link active"
+                         href="#sign-up-tab">Sign
+                          Up</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a id="sign-in-btn" role="tab" data-toggle="tab" class="buttons-style nav-link" href="#sign-in-tab">Sign
+                          In</a>
+                  </li>
+
+                  <li class="nav-item">
+                      <a id="facebook-login" role="tab" data-toggle="tab" class="buttons-style nav-link"> Login with Facebook</a>
+                  </li>
+              </ul>
+            </div>
+
+            </div>
+        </form>
     </div>
   </div>
 </template>
