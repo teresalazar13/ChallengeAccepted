@@ -1,0 +1,28 @@
+<template name= "leaderboard">
+  {{> header}}
+  <div class="page-header">
+    <h1>Leaderboard <small>Can you make it?</small></h1>
+  </div>
+
+  <div class="container">
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Champion</th>
+          <th>Bravery Points</th>
+          <th>Rank</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each users}}
+          <tr>
+            <td>{{this.username}}</td>
+            <td>{{this.points}}</td>
+            <td>1st</td>
+          </tr>
+        {{/each}}
+      </tbody>
+    </table>
+  </div>
+
+</template>

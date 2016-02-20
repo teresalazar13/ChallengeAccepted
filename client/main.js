@@ -15,6 +15,8 @@ Template.main.events({
     var fsFile = new FS.File(event.target.files[0]);
     fsFile.owner = Meteor.userId();
     var acomp = this.title;
+    var rate = this.rate;
+    Meteor.call("add_points", rate);
     fsFile.filename = acomp;
     Images.insert(fsFile, function (err) {
       if (err) throw err;

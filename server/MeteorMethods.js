@@ -8,4 +8,8 @@ Meteor.methods({
       username: Meteor.users.findOne({"_id": Meteor.userId()}).username,
     });
   },
+
+  add_points: function(rate) {
+    Meteor.users.update(Meteor.userId(), {$inc: {points: rate}});
+  },
 });

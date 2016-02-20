@@ -101,6 +101,17 @@ body {
   background-color: #e8e5f0;
 }
 
+.posts_of_user {
+  float: left;
+  margin: auto;
+  margin-left: 5%;
+  margin-top: 4%;
+  width: 20%;
+  background-color: #e8e5f0;
+  display:inline-block;
+
+}
+
 .page-header {
   text-align: center;
 }
@@ -108,9 +119,11 @@ body {
 .accomps {
   margin: auto;
   margin-top: 4%;
+  margin-left: 5%;
   width: 40%;
   padding: 30px;
   background-color: #e8e5f0;
+  display:inline-block;
 }
 .each_accomp {
   margin-top: 4%;
@@ -141,16 +154,25 @@ body {
 }
 input,
 [type=file] + label {
-  border: 1px solid #CCC;
-  border-radius: 3px;
-  text-align: left;
-  padding: 10px;
-  width: 150px;
-  margin: 0;
-  left: 0;
-  position: relative;
+
 }
 
 .challenge {
   font-size: 20px;
+}
+
+.parag {
+  font-size: 15px;
+  margin-top: 2%;
+}
+
+#linhas {
+  font-size: 15px;
+}
+
+.footer{
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
 }

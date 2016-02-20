@@ -5,7 +5,10 @@ Template.profile.helpers({
   },
 
   accomps: function() {
-    console.log(this._id);
     return Images.find({owner: this._id});
   },
+
+  user_challenges: function() {
+    return Challenges.find({owner: this._id});
+  }
 });
