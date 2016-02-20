@@ -1,5 +1,10 @@
 /* CSS declarations go here */
 
+body {
+  min-width: 100%;
+  min-height: 100%;
+}
+
 .page-header {
   margin-top: 7%;
 }
@@ -26,14 +31,9 @@
 }
 
 #brand {
-  height: 40px;
-  margin-top: 13%;
-  float:left;
-  margin-left: -10%;
-  margin: auto;
-  margin-top: 4%;
-  width: 40%;
-  padding: 30px;
+  height: 200%;
+  width: auto;
+  margin-top: -18%;
 }
 
 #authentication-form-btns {
