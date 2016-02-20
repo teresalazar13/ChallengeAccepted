@@ -6,6 +6,6 @@ Template.profile.helpers({
 
   accomps: function() {
     console.log(this._id);
-    return Images.find({owner: Meteor.userId()});
+    return Images.find({owner: this._id});
   },
 });

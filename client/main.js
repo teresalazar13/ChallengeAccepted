@@ -19,6 +19,7 @@ Template.main.events({
     Images.insert(fsFile, function (err) {
       if (err) throw err;
     });
+    Router.go("/");
   },
 
   'submit form': function(e) {

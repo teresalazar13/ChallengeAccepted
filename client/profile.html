@@ -1,9 +1,13 @@
 <template name="profile">
-  <h1>{{username}}'s Profile</h1>
-  <div class="accomps">
-    {{#each accomps}}
-      {{this.filename}}
-      <img class="accomp-image" src="{{this.url}}">
-    {{/each}}
+  {{> header}}
+  <div class="page-header">
+    <h1>Challenge Accepted <small>{{username}}'s Profile</small></h1>
   </div>
+  {{#each accomps}}
+    <div class="accomps">
+      <p>{{this.filename}}</p>
+      <p>Wow, such bravery</p>
+      <img class="accomp-image" src="{{this.url}}">
+    </div>
+  {{/each}}
 </template>
