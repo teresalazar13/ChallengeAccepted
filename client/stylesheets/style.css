@@ -11,9 +11,10 @@
   background-color: white;
   opacity: 0.7;
   width: 400px;
-  height: 250px;
+  height: 300px;
   margin: 0;
   margin-top: 10%;
+  border-style: solid;
 }
 
 #brand {
@@ -23,37 +24,25 @@
   margin-left: -10%;
 }
 
-.login {
-  float: left;
-  margin-left: 2%;
-  margin-top: 30%;
+#authentication-form-btns {
+  margin-top: 8%;
 }
 
-.login ul li {
-  list-style: none;
+.nav-item {
+  margin-left: 10%;
 }
 
-.buttons {
-  width: 300px;
-}
-
-.login-buttons {
-  float: left;
-  max-width: 60px;
-  max-height: 20px;
-  padding-left: 50px;
-}
-
-#facebook-logo {
-  max-width: 40px;
-  max-height: 40px;
+#password {
+  -webkit-text-security: disc;
 }
 
 .inputs {
   background: transparent;
   border: none;
   font-size: 20px;
-  border-bottom: 2px solid grey;
+  width: 90%;
+  border-bottom: : 1px solid black;
+  border-width: 5px;
   font-family: monospace;
   outline: none;
   margin-top: 5%;
@@ -68,86 +57,6 @@
   -webkit-text-security: disc;
 }
 
-/*
-/* CSS declarations go here */
-
-#background {
-  width: 100%;
-  height: 100%;
-  box-sizing: border-box;
-  background: url(mano.gif) no-repeat center center fixed;
-  position: absolute;
-}
-#authentication-form {
-  background-color: white;
-  opacity: 0.7;
-  width: 400px;
-  height: 250px;
-  margin: 0;
-  margin-top: 10%;
-}
-
-#brand {
-  height: 40px;
-  margin-top: 13%;
-  float:left;
-  margin-left: -10%;
-}
-
-.login {
-  float: left;
-  margin-left: 2%;
-  margin-top: 30%;
-}
-
-.login ul li {
-  list-style: none;
-}
-
-.buttons {
-  width: 300px;
-}
-
-.login-buttons {
-  float: left;
-  max-width: 60px;
-  max-height: 20px;
-  padding-left: 50px;
-}
-
-#facebook-logo {
-  max-width: 40px;
-  max-height: 40px;
-}
-
-.inputs {
-  background: transparent;
-  border: none;
-  font-size: 20px;
-  border-bottom: 2px solid grey;
-  font-family: monospace;
-  outline: none;
-  margin-top: 5%;
-  margin-left: 10%;
-}
-
-.nav-item {
-  margin-left: 10%;
-}
-
-#password {
-  -webkit-text-security: disc;
-}
-
-
-.main.form{
-  border:20px groove orange;
-  border-radius: 30px;
-  width:50%;
-  height:325px;
-  position:relative;
-  left:50px;
-}
 
 .control-label.title-Pages{
   position:relative;
@@ -164,21 +73,7 @@
   font-size:35px;
 }
 
-body{
-  background: linear-gradient(to bottom, #fefcea 26%,#efda53 100%,#efda53 100%,#efda53 100%,#f1da36 100%);
-  background-position: fixed;
-}
-
-p{
-  border:1px solid black;
-  position: relative;
-  left:2.5%;
-  width:400px;
-  
-}
 .btn.btn-default.btn-file{
   position: relative;
   left:2.5%;
 }
-
-*/
