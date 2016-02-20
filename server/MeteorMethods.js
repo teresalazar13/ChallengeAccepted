@@ -5,6 +5,7 @@ Meteor.methods({
       createdAt: new Date(),
       owner: Meteor.userId(),
       rate: rating,
+      username: Meteor.users.findOne({"_id": Meteor.userId()}).username,
     });
   },
 });

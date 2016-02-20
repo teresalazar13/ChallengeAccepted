@@ -2,11 +2,11 @@ Meteor.subscribe("challenges");
 
 Template.main.helpers({
   images_of_user: function() {
-    return Images.find({"owner": Meteor.userId()});
+    return Images.find({});
   },
 
   challenges_of_user: function() {
-    return Challenges.find({"owner": Meteor.userId()});
+    return Challenges.find({});
   },
 });
 
