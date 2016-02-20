@@ -12,4 +12,8 @@ Meteor.methods({
   add_points: function(rate) {
     Meteor.users.update(Meteor.userId(), {$inc: {points: rate}});
   },
+
+  add_rank: function(us, place) {
+    Meteor.users.update(us, {$set: {rank: place}});
+  }
 });

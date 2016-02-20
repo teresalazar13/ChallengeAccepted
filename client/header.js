@@ -1,6 +1,6 @@
 Template.header.helpers({
   username: function() {
-    return Meteor.users.findOne({"_id": Meteor.userId()}).username;
+    return Meteor.user().username;
   }
 });
 
@@ -8,5 +8,6 @@ Template.header.events({
   'click .logout': function(event){
       event.preventDefault();
       Meteor.logout();
+      Router.go("/");
   }
 });

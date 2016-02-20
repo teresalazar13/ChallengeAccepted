@@ -1,12 +1,8 @@
 Meteor.subscribe("challenges");
 
 Template.main.helpers({
-  images_of_user: function() {
-    return Images.find({});
-  },
-
   challenges_of_user: function() {
-    return Challenges.find({});
+    return Challenges.find({}, {sort: {createdAt: -1}});
   },
 });
 
