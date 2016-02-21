@@ -4,6 +4,10 @@ Template.main.helpers({
   challenges_of_user: function() {
     return Challenges.find({}, {sort: {createdAt: -1}});
   },
+
+  isnt_owner: function() {
+    return Meteor.userId() !== this.owner;
+  }
 });
 
 Template.main.events({
@@ -25,4 +29,8 @@ Template.main.events({
     var rating = $('#rating').data('userrating');
     Meteor.call("add_challenge", title,rating);
   },
+
+  'click #delete': function() {
+    Meteor.call("delete_challenge", this._id);
+  }
 });

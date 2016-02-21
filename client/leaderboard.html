@@ -17,9 +17,9 @@
         {{#each users}}
 
           <tr>
-            <td>{{this.username}}</td>
+            <td><a href="/user/{{this.username}}" id="champs">{{this.username}}</a></td>
             <td>{{this.points}}</td>
-            <td>{{ this.index }}</td>
+            <td>{{this.index}}</td>
           </tr>
 
         {{/each}}

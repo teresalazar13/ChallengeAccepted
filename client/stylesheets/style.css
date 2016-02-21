@@ -9,6 +9,34 @@ body {
   margin-top: 7%;
 }
 
+.drop-list {
+  margin-top: 0px;
+  list-style: none;
+  display: block;
+  position:absolute;
+  background-color: #222;
+  width: 100%;
+  height: 120%;
+  margin-top: -0.5%;
+}
+.drop-list a {
+  color: white;
+  list-style: none;
+  text-decoration: none;
+  margin-top: 1px;
+}
+
+.drop-list a:hover {
+  color: pink;
+  list-style: none;
+  text-decoration: none;
+}
+
+#cenas {
+  margin-top: 3%;
+  padding-left: 4px;
+}
+
 #background {
   margin: auto;
   width: auto;
@@ -167,6 +195,10 @@ input,
 
 #point {
   font-size: 25px;
+}
+
+#champs {
+  text-decoration: none;
 }
 
 .footer{

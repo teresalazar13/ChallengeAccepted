@@ -12,4 +12,13 @@ Template.profile.helpers({
     return Challenges.find({owner: this._id});
   },
 
+  is_owner: function() {
+    return this.owner === Meteor.userId();
+  }
+});
+
+Template.profile.events({
+  'click #delete': function() {
+    Meteor.call("delete_image", this._id);
+  }
 });

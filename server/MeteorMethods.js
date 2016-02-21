@@ -13,4 +13,18 @@ Meteor.methods({
     Meteor.users.update(Meteor.userId(), {$inc: {points: rate}});
   },
 
+  add_rank: function(user, position) {
+    Meteor.users.update(user, {$set: {rank: position}});
+  },
+
+  delete_image: function(id) {
+    if (Meteor.userId() == Images.findOne({_id: id}).owner)
+      Images.remove(id);
+  },
+
+  delete_challenge: function(id) {
+    if (Meteor.userId() == Challenges.findOne({_id: id}).owner)
+      Challenges.remove(id);
+  }
+
 });
