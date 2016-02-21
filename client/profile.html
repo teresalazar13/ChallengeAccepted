@@ -6,7 +6,9 @@
   </div>
   <div class="row">
     <div class="col-md-6">
-      <p>Points of Bravery</p>
+      <div class="posts_of_user">
+      <p id="point">Bravery Points: {{points}}</p>
+      </div>
       {{#each user_challenges}}
       <div class="posts_of_user">
         <p class="challenge"><a href="/{{username}}">{{username}}</a> challenges you to "{{this.title}}"</p>
@@ -21,9 +23,9 @@
     <div class="col-md-6">
       {{#each accomps}}
         <div class="accomps">
-          <p>{{this.filename}}</p>
-          <p>Wow, such bravery</p>
+          <p id="linhas">{{this.filename}}</p>
           <img class="accomp-image" src="{{this.url}}">
+          <p id="linhas">Wow, such bravery</p>
         </div>
       {{/each}}
       </div>

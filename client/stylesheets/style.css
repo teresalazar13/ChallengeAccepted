@@ -162,7 +162,11 @@ input,
 }
 
 #linhas {
-  font-size: 15px;
+  font-size: 18px;
+}
+
+#point {
+  font-size: 25px;
 }
 
 .footer{

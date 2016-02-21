@@ -10,5 +10,6 @@ Template.profile.helpers({
 
   user_challenges: function() {
     return Challenges.find({owner: this._id});
-  }
+  },
+
 });
