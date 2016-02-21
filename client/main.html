@@ -25,7 +25,7 @@
   <div class="posts">
     {{#if isnt_owner}}
     <p class="challenge"><a href="/user/{{this.username}}">{{this.username}}</a> challenges you to "{{this.title}}"</p>
-    <p id="linhas">Difficulty: {{this.rate}}</p>
+    <p id="linhas">Difficulty: {{dif}}</p>
     <span  id="ups" class="btn btn-default btn-file">
       <input class="myFileInput" id="files" type="file"/>
       <label class="myFileInput" for="files">Show us your guts</label>
@@ -33,7 +33,7 @@
     {{/if}}
     {{#unless isnt_owner}}
       <p class="challenge"><a href="/user/{{this.username}}">You</a> challenged bravers to "{{this.title}}"</p>
-      <p id="linhas">Difficulty: {{this.rate}}</p>
+      <p id="linhas">Difficulty: {{dif}}</p>
       <button id="delete" class="buttons-style btn btn-primary">Delete</button>
     {{/unless}}
   </div>

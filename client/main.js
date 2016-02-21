@@ -7,6 +7,15 @@ Template.main.helpers({
 
   isnt_owner: function() {
     return Meteor.userId() !== this.owner;
+  },
+
+  dif: function() {
+    if (this.rate !== null) {
+      return this.rate;
+    }
+    else {
+      return "Easy Peasy lemon squezy";
+    }
   }
 });
 

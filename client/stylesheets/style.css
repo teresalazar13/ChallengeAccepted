@@ -31,7 +31,9 @@ body {
   list-style: none;
   text-decoration: none;
 }
-
+.col-md-6 {
+  margin-bottom: 5%;
+}
 #cenas {
   margin-top: 3%;
   padding-left: 4px;
@@ -128,6 +130,7 @@ body {
   width: 40%;
   padding: 30px;
   background-color: #e8e5f0;
+  border-radius: 5%;
 }
 
 .posts {
@@ -136,6 +139,7 @@ body {
   width: 40%;
   padding: 30px;
   background-color: #e8e5f0;
+  border-radius: 5%;
 }
 
 .posts_of_user {
@@ -143,6 +147,7 @@ body {
   margin-top: 5%;
   margin-left: 5%;
   padding: 6%;
+  border-radius: 3%;
 }
 
 .page-header {
@@ -150,10 +155,10 @@ body {
 }
 
 .accomps {
-  margin-right: 5%;
   margin-top: 5%;
   padding: 6%;
   background-color: #e8e5f0;
+  border-radius: 3%;
 }
 .each_accomp {
   margin-top: 5%;
