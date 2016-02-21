@@ -42,16 +42,23 @@ body {
   width: auto;
   height: 100%;
   box-sizing: border-box;
-  background: url(mano.gif) no-repeat center center;
+  background: url(mano.gif) no-repeat fixed center center;
   position: absolute;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
+#form-front-page {
+  width: 80%; }
+
 
 #authentication-form {
   background-color: white;
+  display: table;
+  margin-top: 20%;
+  margin-left: 20%;
   opacity: 0.7;
-  margin: auto;
-  margin-top: 13%;
-  margin-left: 13%;
+  margin-right: auto;
   position: absolute;
   width: 50%;
   height: auto;
@@ -180,6 +187,11 @@ input,
 
 }
 
+#ups {
+  padding: 10px;
+  margin-left: 30%;
+}
+
 .challenge {
   font-size: 20px;
 }
@@ -201,9 +213,15 @@ input,
   text-decoration: none;
 }
 
-.footer{
+.wrap {
   position:relative;
-  left:22.5%;
-  padding: 20px 20px 0px 20px;
-  margin:auto;
+  margin:0 auto;
+  margin-top: -45%;
+  width:100%;
+}
+
+#footer {
+  width:100%;
+  float:left;
+  margin-left: 15%;
 }

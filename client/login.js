@@ -27,15 +27,6 @@ Template.login.events({
       currentTab = 'sign_up';
   },
 
-  'click #facebook-login': function(event) {
-      Meteor.loginWithFacebook({}, function(err){
-      Meteor.call("loginFacebook", Meteor.userId());
-          if (err) {
-              throw new Meteor.Error("Facebook login failed");
-          }
-      });
-  },
-
   'submit form': function (event) {
       event.preventDefault();
 
