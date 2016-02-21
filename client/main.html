@@ -23,13 +23,16 @@
 
   {{#each challenges_of_user}}
   <div class="posts">
+    <div>
+      <img style="width:20%; margin-top:3%; margin-bottom:3%; margin-left:auto; margin-right:auto; display: block; float:right;" src="{{image}}">
+    </div>
     {{#if isnt_owner}}
     <p class="challenge"><a href="/user/{{this.username}}">{{this.username}}</a> challenges you to "{{this.title}}"</p>
     <p id="linhas">Difficulty: {{dif}}</p>
-    <span  id="ups" class="btn btn-default btn-file">
-      <input class="myFileInput" id="files" type="file"/>
-      <label class="myFileInput" for="files">Show us your guts</label>
-    </span>
+      <span id="ups" class="btn btn-default btn-file">
+        <input class="myFileInput" id="files" type="file"/>
+        <label class="myFileInput" for="files">Show us your guts</label>
+      </span>
     {{/if}}
     {{#unless isnt_owner}}
       <p class="challenge"><a href="/user/{{this.username}}">You</a> challenged bravers to "{{this.title}}"</p>

@@ -25,6 +25,10 @@ Meteor.methods({
   delete_challenge: function(id) {
     if (Meteor.userId() == Challenges.findOne({_id: id}).owner)
       Challenges.remove(id);
+  },
+
+  add_image: function(id) {
+    Meteor.users.update(Meteor.userId(), {$set: {image: "/cfs/files/images/" + id}});
   }
 
 });

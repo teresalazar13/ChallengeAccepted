@@ -16,6 +16,10 @@ Template.main.helpers({
     else {
       return "Easy Peasy lemon squezy";
     }
+  },
+
+  image: function() {
+    return Meteor.users.findOne({username: this.username}).image;
   }
 });
 

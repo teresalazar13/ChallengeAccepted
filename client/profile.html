@@ -7,24 +7,38 @@
   <div class="row">
     <div class="col-md-6">
       <div class="posts_of_user">
-      <p id="point">Number {{rank}} bravest</p>
-      <p id="point">Bravery Points: {{points}}</p>
+        <img class="profilepic" style="max-width:100%;margin-left:auto;margin-right:auto; margin-top:3%;display:block;margin-bottom:3%" src="{{image}}">
+        <p id="point">Number {{rank}} bravest</p>
+        <p id="point">Bravery Points: {{points}}</p>
+        {{#if is_page}}
+        <span  id="ups" class="btn btn-default btn-file">
+          <input class="myFileInput" id="files" type="file"/>
+          <label class="myFileInput" for="files">Show us your brave face</label>
+        </span>
+        {{/if}}
       </div>
       {{#each user_challenges}}
       <div class="posts_of_user">
-        <p class="challenge"><a href="/{{username}}">{{username}}</a> challenges you to "{{this.title}}"</p>
-        <p id="linhas">Difficulty: {{this.rate}}</p>
-        <span class="btn btn-default btn-file">
-          <input class="myFileInput" id="files" type="file"/>
-          <label class="myFileInput" for="files">Show us your guts</label>
-        </span>
+        {{#if isnt_owner}}
+          <p class="challenge"><a href="/user/{{this.username}}">{{this.username}}</a> challenges you to "{{this.title}}"</p>
+          <p id="linhas">Difficulty: {{dif}}</p>
+          <span  id="ups" class="btn btn-default btn-file">
+            <input class="myFileInput" id="files" type="file"/>
+            <label class="myFileInput" for="files">Show us your guts</label>
+          </span>
+        {{/if}}
+        {{#unless isnt_owner}}
+          <p class="challenge"><a href="/user/{{this.username}}">You</a> challenged bravers to "{{this.title}}"</p>
+          <p id="linhas">Difficulty: {{dif}}</p>
+          <button id="delete2" class="buttons-style btn btn-primary">Delete</button>
+        {{/unless}}
       </div>
       {{/each}}
       </div>
     <div class="col-md-6">
       {{#each accomps}}
         <div class="accomps">
-          <p id="linhas">{{this.filename}}</p>
+          <p id="linhas">Accomplishment: "{{this.filename}}"</p>
           <img class="accomp-image" src="{{this.url}}">
           <p id="linhas">Wow, such bravery</p>
           {{#if is_owner}}
