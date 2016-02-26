@@ -1,4 +1,6 @@
 Meteor.subscribe("challenges");
+Meteor.subscribe("users");
+Meteor.subscribe("images");
 
 Template.main.helpers({
   challenges_of_user: function() {
@@ -31,6 +33,7 @@ Template.main.events({
     var rate = this.rate;
     Meteor.call("add_points", rate);
     fsFile.filename = acomp;
+    fsFile.rate = rate;
     Images.insert(fsFile, function (err) {
       if (err) throw err;
     });

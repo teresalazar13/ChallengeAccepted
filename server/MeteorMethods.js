@@ -17,9 +17,12 @@ Meteor.methods({
     Meteor.users.update(user, {$set: {rank: position}});
   },
 
-  delete_image: function(id) {
-    if (Meteor.userId() == Images.findOne({_id: id}).owner)
+  delete_image: function(id, image) {
+    if (Meteor.userId() == Images.findOne({_id: id}).owner) {
+      var points = Images.findOne({_id: id}).rate;
+      Meteor.users.update(Meteor.userId(), {$inc: {points: -points}});
       Images.remove(id);
+    }
   },
 
   delete_challenge: function(id) {
@@ -28,7 +31,6 @@ Meteor.methods({
   },
 
   add_image: function(id) {
-    Meteor.users.update(Meteor.userId(), {$set: {image: "/cfs/files/images/" + id}});
+    Meteor.users.update(Meteor.userId(), {$set: {image: "/images" + id}});
   }
-
 });

@@ -24,7 +24,6 @@ accounts-password
 cfs:standard-packages
 cfs:filesystem
 cfs:gridfs
-autopublish
 barbatus:stars-rating
 sacha:spin
 meteorhacks:aggregate
