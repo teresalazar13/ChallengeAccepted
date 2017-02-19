@@ -31,6 +31,6 @@ Meteor.methods({
   },
 
   add_image: function(id) {
-    Meteor.users.update(Meteor.userId(), {$set: {image: "/images" + id}});
+    Meteor.users.update(Meteor.userId(), {$set: {image: "/images/" + id}});
   }
 });
